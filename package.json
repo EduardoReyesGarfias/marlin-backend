@@ -1,0 +1,19 @@
+{
+  "name": "backend-ecommerce-marlin",
+  "version": "1.0.0",
+  "description": "Backend ecommerce tienda marlin",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ISI. Eduardo Reyes Garfias",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
