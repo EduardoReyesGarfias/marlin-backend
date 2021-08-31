@@ -1,6 +1,6 @@
-const model = require("../models/tags.model");
+const model = require("../models/subcategorias.model");
 
-const getTags = (req, res) =>{
+const getSubcategorias = (req, res) =>{
     model.find({}, (err, docs) =>{
         if(!err){
             res.status(200).json({
@@ -12,10 +12,10 @@ const getTags = (req, res) =>{
     });
 }
 
-const insertTag = (req, res) =>{
+
+const insertSubcategorias = (req, res) =>{
     const data = req.body;
     model.create( data, (err, docs) =>{
-    
         if(!err){
             res.status(200).json({
                 error : 0,
@@ -34,6 +34,6 @@ const insertTag = (req, res) =>{
 }
 
 module.exports = {
-    getTags,
-    insertTag
+    getSubcategorias,
+    insertSubcategorias
 }
