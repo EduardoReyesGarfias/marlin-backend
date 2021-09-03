@@ -28,7 +28,7 @@ const errorControl = err =>{
     let msg = "";
 
     if(code == "11000")
-        msg = `El registro ${err.keyValue.nombreMarca} ya existe y no puede ser duplicado.`;
+        msg = `El registro ya existe y no puede ser duplicado.`;
 
     return msg;
 }
